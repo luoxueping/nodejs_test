@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<h1><%= title %></h1>
+	<input type="button" name="test" value="测试" onclick="dotest()">
+	<!--<a href="/login">登录</a>-->
+	<form action="/login" method="post">
+		<table>
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="text" name="password"></td>
+			</tr>
+		</table>
+		<input type="submit" value="提交">
+	</form>
+</body>
+</html>
